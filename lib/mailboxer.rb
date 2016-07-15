@@ -31,7 +31,7 @@ module Mailboxer
     end
 
     def protected_attributes?
-      Rails.version < '4' || defined?(ProtectedAttributes)
+      defined?(ProtectedAttributes)
     end
   end
 
