@@ -61,10 +61,8 @@ describe Mailboxer::Message do
       end
     end
 
+    it "should return an empty array of message attachments" do
+      expect(@message1.message_attachments).to eq []
+    end
   end
-
-  it "should return an empty array of message attachments" do
-    expect(@message1.message_attachments).to eq []
-  end
-
 end
